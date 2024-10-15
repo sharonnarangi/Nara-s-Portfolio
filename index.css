@@ -1,0 +1,128 @@
+*{
+    
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+p{
+    color: black;
+}
+
+a,
+.btn{
+    transition: all 300ms ease;
+
+}
+.nav-links{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    text-decoration-color: white;
+}
+
+a:hover{
+    color: pink;
+    text-decoration: underline;
+}
+
+.logo{
+    font-size: 2rem;
+}
+
+.logo:hover{
+    cursor: default;
+}
+
+#second-nav{
+    display: none;
+}
+.second-menu{
+    position: relative;
+    display: inline-block;
+}
+
+.second-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+.second-icon span{
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition: all 0.3 ease-in-out;
+}
+.menu-links{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color:white;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3 ease-in-out;;
+}
+
+.menu-links a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+    transition:all 0.3 ease-in-out; 
+}
+.menu-links li {
+    list-style: none;
+}
+
+.menu-links.open{
+    max-height: 300px;
+}
+
+.second-icon.open span :first-child{
+    transform: rotate(45deg) translate(10px, 5px);
+}
+
+.second-icon.open span  :nth-child(2){
+    opacity: 0;
+}
+.second-icon.open span :last-child{
+    transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.second-icon span:first-child{
+    transform: none;
+}
+
+.second-icon span:first-child{
+   opacity: 1;
+}
+
+.second-icon span:first-child{
+    transform: none;
+}
+
