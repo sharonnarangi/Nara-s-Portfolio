@@ -1,6 +1,5 @@
-function toggleMenu(){
-    const menu = document.querySelector(".menu-links");
-    const icon = document.querySelector(".second-icon");
-    menu.classList.toggle("open");
-    icon.classList.toggle("open");
-}
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    alert('Thank you for your message!');
+    this.reset(); // Clear the form fields
+});
